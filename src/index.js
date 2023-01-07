@@ -5,12 +5,12 @@ import { Route, Switch, Link } from 'react-router-dom';
 
 
 import './index.css';
-import App from './App';
+import Nav from './Nav';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App></App>
+    <Nav></Nav>
   </React.StrictMode>
 );
 
