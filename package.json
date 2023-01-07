@@ -4,15 +4,19 @@
   "private": true,
   "homepage": "http://jasonduong13.github.io/Personal",
   "dependencies": {
+    "@react-three/fiber": "^8.10.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "framer-motion": "^8.2.4",
+    "framer-motion-3d": "^8.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.6",
+    "three": "^0.148.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

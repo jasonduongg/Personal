@@ -1,11 +1,13 @@
 import './Main.css';
 
 import React from 'react';
-import { motion, useTime, useTransform } from "framer-motion"
+import { motion, useTime } from "framer-motion"
 
 
 const element = () => {
 
+  const time = useTime();
+  const rotate = useTransform(time, [0, 4000], [0, 360], { clamp: false });
 
   return (
     <div>
@@ -14,14 +16,10 @@ const element = () => {
       </h1>
         <motion.div
           class = "box"
-          animate={{ y:100}}
-          transition={{
-            from: 0,
-            repeat: Infinity, 
-            repeatType: "reverse",
-            duration: 2
-          }}
-        >
+          animate = {{y: 100 , scale: 1}}
+          initial = {{scale: 0}}
+          style= {{rotate}}
+        > 
           <div class = "box_text_container"></div>
         </motion.div>
     </div>
