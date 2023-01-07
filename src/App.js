@@ -1,16 +1,21 @@
 import './App.css';
 
+import { Route, HashRouter as Router, Routes } from "react-router-dom";
+
 import Main from "./Main.jsx";
-import Project from "./Projects.jsx"
+import Projects from "./Projects.jsx"
+import Navbar from './components';
 
 function App() {
   return (
-    <div>
-      <h1 class = "header">
-        TEST
-      </h1>
-    </div>
-    );
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Main />} />
+        <Route path="/projects" element={<Projects/>} />
+      </Routes>
+    </Router>
+        );
 }
 
 export default App;
