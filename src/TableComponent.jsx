@@ -2,8 +2,10 @@ import React,  { useRef, useState } from 'react';
 
 import { Canvas } from 'react-three-fiber';
 import { motion } from "framer-motion-3d"
+import { Text } from '@react-three/drei'
+import fonts from "./components/fonts.js"
 
-import './TableComponent.css';
+
 
 
 
@@ -84,17 +86,33 @@ class TableComponent extends React.Component {
                 transition = {{
                     duration: 0.75
                 }}
-              >
-              <boxBufferGeometry 
-                args={[2.5, 5, 4]} />
-              <motion.meshStandardMaterial 
-                initial="hidden"
-                animate="visible"
-                variants={variants}
-                color={'#ccccff'} 
-                transition={{
-                    duration: 1
-                }}
+                >
+                <boxBufferGeometry 
+                     {...props}
+                    args={[1.5, 5, 4]} />
+                    <group 
+                        {...props}
+                        rotation={[0, 0, Math.PI * 0.5]} 
+                        position = {[0.25, props.messageOffet, 2.5]} >
+                            <Text 
+                            color="black" 
+                            anchorX="center" 
+                            anchorY="middle"
+                            rotateZ={0.5}
+                            fontSize={0.8}
+                            font={fonts.Trocchi}
+                            >
+                        {props.message}
+                            </Text>
+                    </group>
+                <motion.meshStandardMaterial 
+                    initial="hidden"
+                    animate="visible"
+                    variants={variants}
+                    color={'#ccccff'} 
+                    transition={{
+                        duration: 1
+                    }}
                 />
             </motion.mesh>
           )
@@ -108,8 +126,8 @@ class TableComponent extends React.Component {
                 <ambientLight intensity={0.7} />
                 <spotLight position={[5, 50, -2.5]} angle={0.3} penumbra={0.9} />
                 <Top position={[0, -0.5, -5]} />
-                <Book position={[-5, 2, -5.5]} message={"1"} />
-                <Book position={[-2, 2, -5.5]} message={"2"} />
+                <Book position={[-5, 2.25, -5.5]} message={"PROJECTS"} messageOffet = {0.1} />
+                <Book position={[-3.25, 2.25, -5.5]} message={"CURRICULUM VITAE"} messageOffet = {0}/>
                 <axesHelper args={[50]} />
                 </group>
             </Canvas>

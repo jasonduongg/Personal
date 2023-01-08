@@ -1,5 +1,7 @@
 import React from 'react';
 import {motion} from "framer-motion"
+
+
 class CardComponent extends React.Component {
     constructor(props) {
         super(props) 
