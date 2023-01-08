@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/Personal/static/css/main.041ba3b2.css",
-    "main.js": "/Personal/static/js/main.260722a8.js",
+    "main.css": "/Personal/static/css/main.c5b15849.css",
+    "main.js": "/Personal/static/js/main.463c26c2.js",
+    "static/media/raleway.ttf": "/Personal/static/media/raleway.575ec9e676c7a85494bb.ttf",
     "index.html": "/Personal/index.html",
-    "main.041ba3b2.css.map": "/Personal/static/css/main.041ba3b2.css.map",
-    "main.260722a8.js.map": "/Personal/static/js/main.260722a8.js.map"
+    "main.c5b15849.css.map": "/Personal/static/css/main.c5b15849.css.map",
+    "main.463c26c2.js.map": "/Personal/static/js/main.463c26c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.041ba3b2.css",
-    "static/js/main.260722a8.js"
+    "static/css/main.c5b15849.css",
+    "static/js/main.463c26c2.js"
   ]
 }
