@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jasonduong13.github.io/Personal",
+  "homepage": "http://jasonduongg.github.io/Personal",
   "dependencies": {
     "@react-three/drei": "^9.51.21",
     "@react-three/fiber": "^8.10.0",

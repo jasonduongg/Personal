@@ -99,7 +99,7 @@ class TableComponent extends React.Component {
                             anchorX="center" 
                             anchorY="middle"
                             rotateZ={0.5}
-                            fontSize={0.8}
+                            fontSize={props.size}
                             font={fonts.Trocchi}
                             >
                         {props.message}
@@ -126,8 +126,9 @@ class TableComponent extends React.Component {
                 <ambientLight intensity={0.7} />
                 <spotLight position={[5, 50, -2.5]} angle={0.3} penumbra={0.9} />
                 <Top position={[0, -0.5, -5]} />
-                <Book position={[-5, 2.25, -5.5]} message={"PROJECTS"} messageOffet = {0.1} />
-                <Book position={[-3.25, 2.25, -5.5]} message={"CURRICULUM VITAE"} messageOffet = {0}/>
+                <Book position={[-5, 2.25, -5.5]} message={"PROJECTS"} messageOffet = {0.1} size = {0.75} />
+                <Book position={[-3.25, 2.25, -5.5]} message={"CURRICULUM VITAE"} messageOffet = {0.1} size = {0.4} />
+                <Book position={[-1.5, 2.25, -5.5]} message={"CLASSES"} messageOffet = {0.1} size = {0.8} />
                 <axesHelper args={[50]} />
                 </group>
             </Canvas>
